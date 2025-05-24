@@ -1,0 +1,351 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Careers | RVFIN Consultants Pvt Ltd</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="container">
+            <a href="index.html"><img src="assets/images/logo.png" alt="RVFIN Consultants" class="logo"></a>
+            <ul class="nav-menu">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="services.html">Services</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="careers.html" class="active">Careers</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+            <div class="hamburger">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Careers Hero -->
+    <section class="career-hero">
+        <div class="container">
+            <div class="hero-content">
+                <h1>Build Your Career in <span>Banking Consultancy</span></h1>
+                <p>Join our team of experts shaping India's financial future</p>
+                <a href="#openings" class="cta-button pulse">View Open Positions</a>
+            </div>
+            <div class="hero-image">
+                <img src="assets/images/career-hero.jpg" alt="Team Collaboration">
+            </div>
+        </div>
+    </section>
+
+    <!-- Why Join Us -->
+    <section class="benefits">
+        <div class="container">
+            <div class="section-header">
+                <h2>Why <span>RVFIN?</span></h2>
+                <p>We invest in our people's growth and success</p>
+            </div>
+            <div class="benefits-grid">
+                <div class="benefit-card">
+                    <div class="benefit-icon">
+                        <i class="fas fa-graduation-cap"></i>
+                    </div>
+                    <h3>Professional Development</h3>
+                    <ul>
+                        <li>Annual training budget</li>
+                        <li>RBI certification support</li>
+                        <li>Mentorship programs</li>
+                    </ul>
+                </div>
+                
+                <div class="benefit-card">
+                    <div class="benefit-icon">
+                        <i class="fas fa-chart-line"></i>
+                    </div>
+                    <h3>Career Growth</h3>
+                    <ul>
+                        <li>Clear promotion pathways</li>
+                        <li>Cross-functional projects</li>
+                        <li>Leadership opportunities</li>
+                    </ul>
+                </div>
+                
+                <div class="benefit-card">
+                    <div class="benefit-icon">
+                        <i class="fas fa-heart"></i>
+                    </div>
+                    <h3>Work-Life Balance</h3>
+                    <ul>
+                        <li>Flexible work options</li>
+                        <li>Generous leave policy</li>
+                        <li>Wellness programs</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Job Openings -->
+    <section class="job-openings" id="openings">
+        <div class="container">
+            <div class="section-header">
+                <h2>Current <span>Opportunities</span></h2>
+                <p>Explore positions matching your expertise</p>
+            </div>
+            
+            <div class="job-filters">
+                <div class="filter-group">
+                    <label for="department">Department:</label>
+                    <select id="department">
+                        <option value="all">All Departments</option>
+                        <option value="compliance">Compliance</option>
+                        <option value="risk">Risk Management</option>
+                        <option value="advisory">Investment Advisory</option>
+                    </select>
+                </div>
+                <div class="filter-group">
+                    <label for="location">Location:</label>
+                    <select id="location">
+                        <option value="all">All Locations</option>
+                        <option value="mumbai">Mumbai</option>
+                        <option value="delhi">Delhi</option>
+                        <option value="remote">Remote</option>
+                    </select>
+                </div>
+            </div>
+            
+            <div class="jobs-list">
+                <!-- Job 1 -->
+                <div class="job-card" data-department="compliance" data-location="mumbai">
+                    <div class="job-header">
+                        <h3>Senior Compliance Consultant</h3>
+                        <div class="job-meta">
+                            <span><i class="fas fa-map-marker-alt"></i> Mumbai</span>
+                            <span><i class="fas fa-briefcase"></i> Full-time</span>
+                        </div>
+                    </div>
+                    <div class="job-details">
+                        <p>Lead RBI compliance projects for premier banking clients, ensuring adherence to Basel III/IV standards.</p>
+                        <div class="job-skills">
+                            <span>RBI Regulations</span>
+                            <span>Basel III</span>
+                            <span>Risk Assessment</span>
+                        </div>
+                    </div>
+                    <div class="job-actions">
+                        <a href="senior-compliance-consultant.html" class="job-view">View Details</a>
+                        <a href="apply.html?position=senior-compliance-consultant" class="job-apply">Apply Now</a>
+                    </div>
+                </div>
+                
+                <!-- Job 2 -->
+                <div class="job-card" data-department="risk" data-location="delhi">
+                    <div class="job-header">
+                        <h3>Risk Analyst</h3>
+                        <div class="job-meta">
+                            <span><i class="fas fa-map-marker-alt"></i> Delhi</span>
+                            <span><i class="fas fa-briefcase"></i> Full-time</span>
+                        </div>
+                    </div>
+                    <div class="job-details">
+                        <p>Develop risk models and stress testing frameworks for mid-sized banks.</p>
+                        <div class="job-skills">
+                            <span>Credit Risk</span>
+                            <span>Python</span>
+                            <span>FRM</span>
+                        </div>
+                    </div>
+                    <div class="job-actions">
+                        <a href="risk-analyst.html" class="job-view">View Details</a>
+                        <a href="apply.html?position=risk-analyst" class="job-apply">Apply Now</a>
+                    </div>
+                </div>
+                
+                <!-- Job 3 -->
+                <div class="job-card" data-department="advisory" data-location="remote">
+                    <div class="job-header">
+                        <h3>Investment Strategy Associate</h3>
+                        <div class="job-meta">
+                            <span><i class="fas fa-map-marker-alt"></i> Remote</span>
+                            <span><i class="fas fa-briefcase"></i> Contract</span>
+                        </div>
+                    </div>
+                    <div class="job-details">
+                        <p>Support portfolio optimization strategies for private banking clients.</p>
+                        <div class="job-skills">
+                            <span>ALM</span>
+                            <span>CFA</span>
+                            <span>Financial Modeling</span>
+                        </div>
+                    </div>
+                    <div class="job-actions">
+                        <a href="investment-strategy-associate.html" class="job-view">View Details</a>
+                        <a href="apply.html?position=investment-strategy-associate" class="job-apply">Apply Now</a>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="no-jobs" style="display: none;">
+                <i class="fas fa-search"></i>
+                <p>No positions match your filters. <a href="#" id="reset-filters">Reset filters</a> or <a href="contact.html">contact us</a> about future opportunities.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Culture Section -->
+    <section class="culture">
+        <div class="container">
+            <div class="section-header">
+                <h2>Our <span>Culture</span></h2>
+                <p>What makes RVFIN a great workplace</p>
+            </div>
+            <div class="culture-grid">
+                <div class="culture-card">
+                    <div class="culture-icon">
+                        <i class="fas fa-users"></i>
+                    </div>
+                    <h3>Collaborative Environment</h3>
+                    <p>Work alongside RBI-certified experts in an open knowledge-sharing culture.</p>
+                </div>
+                
+                <div class="culture-card">
+                    <div class="culture-icon">
+                        <i class="fas fa-lightbulb"></i>
+                    </div>
+                    <h3>Innovation Focus</h3>
+                    <p>Quarterly hackathons to develop cutting-edge banking solutions.</p>
+                </div>
+                
+                <div class="culture-card">
+                    <div class="culture-icon">
+                        <i class="fas fa-handshake"></i>
+                    </div>
+                    <h3>Client Impact</h3>
+                    <p>See your work directly influence India's top financial institutions.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Employee Testimonials -->
+    <section class="testimonials">
+        <div class="container">
+            <div class="section-header">
+                <h2>Team <span>Stories</span></h2>
+                <p>Hear from our consultants</p>
+            </div>
+            <div class="testimonial-slider">
+                <div class="testimonial active">
+                    <div class="testimonial-content">
+                        <p>"RVFIN supported my transition from banking to consultancy, providing training that helped me achieve my FRM certification within a year."</p>
+                        <div class="testimonial-author">
+                            <img src="assets/images/employee1.jpg" alt="Priya Sharma">
+                            <div>
+                                <h4>Priya Sharma</h4>
+                                <p>Risk Consultant, 2 years at RVFIN</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="testimonial">
+                    <div class="testimonial-content">
+                        <p>"The exposure to diverse banking clients accelerated my learning curve beyond what I imagined possible in my career."</p>
+                        <div class="testimonial-author">
+                            <img src="assets/images/employee2.jpg" alt="Rahul Mehta">
+                            <div>
+                                <h4>Rahul Mehta</h4>
+                                <p>Senior Compliance Advisor, 4 years at RVFIN</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="testimonial-nav">
+                    <button class="testimonial-prev"><i class="fas fa-chevron-left"></i></button>
+                    <div class="testimonial-dots">
+                        <span class="dot active"></span>
+                        <span class="dot"></span>
+                    </div>
+                    <button class="testimonial-next"><i class="fas fa-chevron-right"></i></button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA Section -->
+    <section class="career-cta">
+        <div class="container">
+            <h2>Don't See Your Dream Role?</h2>
+            <p>We're always looking for talented professionals. Send us your resume for future consideration.</p>
+            <div class="cta-buttons">
+                <a href="contact.html" class="cta-button">Submit Resume</a>
+                <a href="mailto:careers@rvfin.com" class="cta-button secondary"><i class="fas fa-envelope"></i> Email Us</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-col">
+                    <img src="assets/images/logo-white.png" alt="RVFIN Consultants" class="footer-logo">
+                    <p>Strategic banking solutions for the modern financial landscape.</p>
+                    <div class="social-icons">
+                        <a href="#"><i class="fab fa-linkedin"></i></a>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                        <a href="#"><i class="fab fa-facebook"></i></a>
+                    </div>
+                </div>
+                
+                <div class="footer-col">
+                    <h3>Services</h3>
+                    <ul>
+                        <li><a href="services.html#compliance">Regulatory Compliance</a></li>
+                        <li><a href="services.html#risk">Risk Management</a></li>
+                        <li><a href="services.html#investment">Investment Advisory</a></li>
+                        <li><a href="services.html">View All</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-col">
+                    <h3>Company</h3>
+                    <ul>
+                        <li><a href="about.html">About Us</a></li>
+                        <li><a href="about.html#team">Our Team</a></li>
+                        <li><a href="about.html#clients">Clients</a></li>
+                        <li><a href="careers.html">Careers</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-col">
+                    <h3>Contact</h3>
+                    <ul class="contact-info">
+                        <li><i class="fas fa-map-marker-alt"></i> 123 Business Ave, Mumbai, India</li>
+                        <li><i class="fas fa-phone"></i> +91 12345 67890</li>
+                        <li><i class="fas fa-envelope"></i> info@rvfinconsultants.com</li>
+                    </ul>
+                </div>
+            </div>
+            
+            <div class="footer-bottom">
+                <p>&copy; 2024 RVFIN Consultants Pvt Ltd. All Rights Reserved.</p>
+                <div class="legal-links">
+                    <a href="privacy.html">Privacy Policy</a>
+                    <a href="terms.html">Terms of Service</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="assets/js/script.js"></script>
+    <script src="assets/js/careers.js"></script>
+</body>
+</html>
