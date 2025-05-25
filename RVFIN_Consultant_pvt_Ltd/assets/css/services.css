@@ -1,0 +1,163 @@
+/* Services Tabs System */
+.services-tabs {
+    padding: 60px 0;
+}
+
+.tab-buttons {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 10px;
+    margin-bottom: 40px;
+}
+
+.tab-btn {
+    padding: 12px 25px;
+    background: #f5f5f5;
+    border: none;
+    border-radius: 4px;
+    font-weight: 600;
+    color: #0A2463;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.tab-btn.active {
+    background: #0A2463;
+    color: white;
+}
+
+.tab-content {
+    display: none;
+}
+
+.tab-content.active {
+    display: block;
+}
+
+/* Product Grid Layout */
+.product-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(350px, 1fr));
+    gap: 30px;
+    margin-top: 30px;
+}
+
+.product-card {
+    background: white;
+    border-radius: 8px;
+    padding: 30px;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.05);
+    transition: transform 0.3s;
+    border-top: 3px solid #D4AF37;
+}
+
+.product-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 25px rgba(0,0,0,0.1);
+}
+
+.product-icon {
+    width: 60px;
+    height: 60px;
+    background: rgba(10, 36, 99, 0.1);
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 20px;
+    color: #0A2463;
+    font-size: 1.5rem;
+}
+
+.product-card h3 {
+    color: #0A2463;
+    margin-bottom: 15px;
+    font-size: 1.3rem;
+}
+
+.product-card p {
+    color: #555;
+    margin-bottom: 15px;
+}
+
+.product-card ul {
+    margin: 20px 0;
+    padding-left: 20px;
+}
+
+.product-card li {
+    margin-bottom: 8px;
+    color: #555;
+    position: relative;
+}
+
+.product-card li:before {
+    content: "•";
+    color: #D4AF37;
+    font-weight: bold;
+    display: inline-block;
+    width: 1em;
+    margin-left: -1em;
+}
+
+/* Additional icon colors */
+#auto .product-icon {
+    background-color: rgba(231, 76, 60, 0.1);
+    color: #e74c3c;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+    .tab-buttons {
+        overflow-x: auto;
+        white-space: nowrap;
+        padding-bottom: 10px;
+    }
+    
+    .tab-btn {
+        display: inline-block;
+        width: auto;
+    }
+    
+    .product-grid {
+        grid-template-columns: 1fr;
+    }
+}
+
+/* Product card enhancements */
+.product-card {
+    position: relative;
+    overflow: hidden;
+}
+
+.product-card:after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 4px;
+    background: linear-gradient(90deg, #0A2463, #D4AF37);
+    transform: scaleX(0);
+    transition: transform 0.3s ease;
+}
+
+.product-card:hover:after {
+    transform: scaleX(1);
+}
+
+/* Responsive Adjustments */
+@media (max-width: 768px) {
+    .product-grid {
+        grid-template-columns: 1fr;
+    }
+    
+    .tab-buttons {
+        flex-direction: column;
+    }
+    
+    .tab-btn {
+        width: 100%;
+    }
+}
