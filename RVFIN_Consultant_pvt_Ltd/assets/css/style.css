@@ -228,7 +228,7 @@ section {
 
 /* ===== Hero Section ===== */
 .hero {
-    background: linear-gradient(135deg, var(--primary) 0%, var(--dark) 100%);
+    background: linear-gradient(105deg, var(--primary) 0%, var(--dark) 100%);
     color: var(--white);
     padding: 180px 0 100px;
 }
@@ -255,6 +255,12 @@ section {
     color: var(--secondary);
 }
 
+.hero-cta {
+    /* display: flex; */
+    gap: 1rem;
+    margin-top: 1rem;
+}
+
 .hero-content p {
     font-size: 1.2rem;
     margin-bottom: 30px;
@@ -267,6 +273,7 @@ section {
 }
 
 .hero-image img {
+    background: linear-gradient(5deg, #76bef5 0%, #585bfa 100%);
     max-width: 100%;
     height: auto;
     animation: float 2s ease-in-out infinite;
