@@ -152,11 +152,12 @@ section {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 20px 0;
+    padding: 1px 0;
 }
 
 .logo {
-    height: 40px;
+    height: 100px; /* Increased from 40px to 60px */
+    width: auto; /* This maintains aspect ratio */
 }
 
 .nav-menu {
